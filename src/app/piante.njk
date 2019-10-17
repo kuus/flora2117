@@ -1,0 +1,54 @@
+{% extends 'layouts/default.njk' %}
+
+{% block body_class %}page--plants{% endblock %}
+
+{% block content %}
+  {% for plant in common.plants %}
+    <article id="{{ plant.slug }}" class="row appPlant">
+      <div class="col-sm-6 appPlant__col appPlant__col--left">
+        <div class="appPlant__inner">
+          <div class="appPlant__figure appPlant__figure--main">
+            <div class="appPlant__slider owl-carousel">
+              <img class="img-fluid" src="images/{{ plant.img.path }}" alt="{{ plant.img.title }}" data-idx="1">
+              {% for rootImg in plant.root.images %}
+              <img class="img-fluid" src="images/{{ rootImg.path }}" alt="{{ rootImg.title }}" data-idx="{{ loop.index + 1 }}">
+              {% endfor %}
+            </div>
+          </div>
+          {% if plant.root %}
+          <div class="appPlant__figure appPlant__figure--root">
+            <div class="appPlant__slider-thumbs owl-carousel">
+              <div class="appPlant__thumb" data-idx="{{ loop.index + 1 }}">
+                <img class="img-fluid" src="images/{{ plant.img.path }}" alt="{{ plant.img.title }}">
+              </div>
+            {% for rootImg in plant.root.images %}
+              <div class="appPlant__thumb" data-idx="{{ loop.index + 1 }}">
+                <img class="img-fluid" src="images/{{ rootImg.path }}" alt="{{ rootImg.title }}">
+              </div>
+            {% endfor %}
+            </div>
+          </div>
+          {% endif %}
+        </div>
+      </div>
+      <div class="col-sm-6 appPlant__col appPlant__col--right">
+        <div class="appPlant__inner">
+          <div class="appPlant__info-wrap">
+            <div class="appPlant__info appPlant__info--main">
+              <h2 class="appPlant__name">{{ plant.name }}</h2>
+              {# <h4 class="appPlant__geo">{{ plant.geo }}</h4> #}
+              <h5 class="appPlant__address">{{ plant.address }}</h5>
+              <div class="appPlant__desc">{{ plant.desc }}</div>
+            </div>
+            {% if plant.root %}
+            <div class="appPlant__info appPlant__info--root">
+              <h2 class="appPlant__name">{{ plant.root.name }}</h2>
+              <div class="appPlant__desc">{{ plant.root.desc }}</div>
+            </div>
+            {% endif %}
+          </div>
+        </div>
+      </div>
+    </article>
+  {% endfor %}
+{% endblock %}

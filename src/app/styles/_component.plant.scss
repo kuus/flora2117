@@ -1,0 +1,209 @@
+.appPlant {
+  margin: ($spacer * 3) 0;
+
+  @include media-breakpoint-up(md) {
+    padding: ($spacer * 2) 0;
+  }
+
+  &:last-child {
+    padding-bottom: 200px;
+  }
+
+  &:first-of-type {
+    margin-top: 0;
+  }
+  &:last-of-type {
+    margin-bottom: 0;
+  }
+
+  /**
+   * Together bootstrap `.col` class
+   */
+  &__col {
+    padding: $spacer 0;
+
+    &--left {
+      display: flex;
+      justify-content: center;
+      @include media-breakpoint-up(sm) {
+        justify-content: flex-end;
+      }
+
+      .appPlant__inner {
+        max-width: 300px !important;
+      }
+    }
+
+    &--right {
+      display: flex;
+      justify-content: center;
+      @include media-breakpoint-up(sm) {
+        justify-content: flex-start;
+      }
+
+      .appPlant__inner {
+        max-width: 300px !important;
+      }
+    }
+  }
+
+  &__inner {
+    position: relative;
+    overflow: hidden;
+  }
+
+  /**
+   * Plant name
+   */
+  &__name {
+    text-transform: uppercase;
+    padding-bottom: $spacer;
+  }
+
+  /**
+   * Plant geo coordinates
+   */
+  &__geo {
+    font-size: .7rem;
+    color: #666;
+    margin: .8rem 0;
+  }
+
+  /**
+   * Plant address
+   */
+  &__address {
+    font-size: .9rem;
+    color: #888;
+    margin: .6rem 0 ($spacer * 2);
+    text-transform: uppercase;
+  }
+
+  /**
+   * Plant description
+   */
+  &__desc {
+  }
+
+  /**
+   * Plant area: Figure
+   */
+  &__figure {
+
+    /**
+     * Plant area: Figure main
+     */
+    &--main {
+      @include media-breakpoint-up(md) {
+        min-height: 444px;
+      }
+
+      img {
+        // box-shadow: 5px 6px 22px -7px rgba(0,0,0,.08);
+      }
+    }
+
+    /**
+     * Plant area: Figure root
+     */
+    &--root {
+      margin-top: $spacer;
+      @include media-breakpoint-up(md) {
+        min-height: 100px;
+      }
+    }
+  }
+
+  /**
+   * Plant area: Info
+   */
+  &__info {
+    transition: transform 0.38s ease-in-out;
+
+    &-wrap {
+      position: relative;
+    }
+
+    /**
+     * Plant area: Info main
+     */
+    &--main {
+      transform: translateX(0);
+
+      .appPlant-show-root & {
+        transform: translateX(-100%);
+      }
+    }
+
+    /**
+     * Plant area: Info root
+     */
+    &--root {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      background: #fff;
+      transform: translateX(-100%);
+
+      .appPlant-show-root & {
+        transform: translateX(0);
+      }
+    }
+  }
+
+  /**
+   * Plant sliders
+   */
+  &__slider {
+    white-space: nowrap;
+
+    .owl-item {
+      cursor: default;
+    }
+
+    /**
+     * Thumbnails
+     */
+    &-thumbs {
+
+      &.owl-carousel .owl-item img {
+        height: 100px;
+        width: auto;
+        // fix blank flash image bug, @see
+        // https://github.com/OwlCarousel2/OwlCarousel2/issues/599
+        -webkit-backface-visibility: hidden;
+        -webkit-transform: translateZ(0) scale(1.0, 1.0);
+      }
+
+      // .owl-stage-outer {
+      //   background: #f1f1f1;
+      // }
+      @at-root {
+.owl-item {
+  background-color: white;
+  cursor: pointer;
+}
+
+.appPlant__thumb {
+  // padding: 0 0 0 15px;
+  opacity: .4;
+  transition: opacity .18s ease-in-out;
+
+  .owl-item.active & {
+    opacity: .5;
+  }
+  .owl-item:hover &,
+  .owl-item.active.center & {
+    opacity: 1;
+  }
+
+  // .owl-item:last-child & {
+  //   padding: 0 15px;
+  // }
+}
+      }
+    }
+  }
+}
+

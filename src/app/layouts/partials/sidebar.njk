@@ -1,0 +1,6 @@
+<nav class="appSidebar nav fixed-top">
+  <a class="nav-link nav-link--home" href="/"><small>flora2117</small></a>
+  {% for page in common.sidebar %}
+    <a class="nav-link" href="{{ page.url }}">{{ page.name }}</a>
+  {% endfor %}
+</nav>

@@ -1,0 +1,3 @@
+Per visualizzare il sito in locale aprire il file index.html nella cartella flora2117,
+
+Sito online raggiungibile all'indirizzo http://flora2117.ml

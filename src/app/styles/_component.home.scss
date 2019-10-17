@@ -1,0 +1,31 @@
+.appHome {
+
+  &__nav {
+    font-family: $headings-font-family;
+
+    a {
+      display: block;
+      padding: $spacer * 1.5;
+      text-align: center;
+    }
+  }
+
+  &__title {
+    font-weight: 100;
+    font-size: $display4-size;
+    margin-bottom: $spacer * 2;
+
+    @include media-breakpoint-up(sm) {
+      font-size: $display3-size;
+    }
+    @include media-breakpoint-up(md) {
+      font-size: $display2-size;
+    }
+  }
+}
+
+.appContent {
+  max-width: 600px;
+  margin: 0 auto;
+}
+

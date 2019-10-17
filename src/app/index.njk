@@ -1,0 +1,14 @@
+{% extends 'layouts/default.njk' %}
+
+{% block body_class %}page--home wrap--centered{% endblock %}
+
+{% block header %}{% endblock %}
+
+{% block container %}
+  <h1 class="appHome__title">flora2117</h1>
+  <nav class="appHome__nav">
+    {% for page in common.sidebar %}
+      <a class="text-uppercase" href="{{ page.url }}">{{ page.name }}</a>
+    {% endfor %}
+  </nav>
+{% endblock %}

@@ -1,0 +1,161 @@
+{
+  "appName": "Flora 2117",
+  "sidebar": [{
+    "name": "Mappa",
+    "url": "/mappa.html"
+  }, {
+    "name": "Piante",
+    "url": "/piante.html"
+  }, {
+    "name": "About",
+    "url": "/about.html"
+  }, {
+    "name": "Contatti",
+    "url": "/contatti.html"
+  }],
+  "plants": [{
+    "id": 1,
+    "slug": "dionaea-muscipula-bubble-gum",
+    "name": "Dionaea Muscipula Bubble Gum",
+    "geo": "(DMM): 41 24.2028, 2 10.4418",
+    "address": "Via Pollaiuolo",
+    "map": {
+      "x": 45.488675,
+      "y": 9.187427,
+      "icon": "leaf-fucsia"
+    },
+    "desc": "In via Pollaiuolo nei pressi del Frida, zona di passaggio e di aperitivo, si è sviluppata questa pianta carnivora che ricava nutrimento e piacere dal masticare le gomme sputate a terra, soffia bolle dai suoi fiori.",
+    "img": {
+      "path": "dionaea-muscipula-bubble-gum.png",
+      "title": "Dionaea Muscipula Bubble Gum"
+    }
+  }, {
+    "id": 2,
+    "slug": "opuntia-ficus-indica-squamata",
+    "name": "Opuntia ficus-indica squamata",
+    "geo": "(DMM): 41 24.2028, 2 10.4418",
+    "address": "Piazza Minniti",
+    "map": {
+      "x": 45.487749,
+      "y": 9.189003,
+      "icon": "leaf-grey"
+    },
+    "desc": "In piazza Minniti, ovvero la piazza del mercato del pesce ogni martedì e sabato, le temperature roventi causate del riscaldamento globale hanno permesso la crescita di una specie di cactus mutato, beve il ghiaccio di conservazione per i pesci e presenta delle infiorescenze color crostaceo.",
+    "img": {
+      "path": "opuntia-ficus-indica-squamata.png",
+      "title": "Opuntia ficus-indica squamata"
+    }
+  }, {
+    "id": 3,
+    "slug": "taraxacum-radix",
+    "name": "Taraxacum Radix",
+    "geo": "(DMM): 41 24.2028, 2 10.4418",
+    "address": "Via Carmagnola",
+    "map": {
+      "x": 45.487157,
+      "y": 9.187036,
+      "icon": "leaf-blue"
+    },
+    "desc": "In via Carmagnola si può osservare una pianta di tarassaco officinale che ha sviluppato le proprie radici così da raggiungere in profondità i cavi contenenti la fibra ottica, in questo modo si può caricare a piacimento di carica positiva o negativa, a seconda se desidera attirare o allontanare gli insetti impollinatori.",
+    "img": {
+      "path": "taraxacum-radix.png",
+      "title": "Taraxacum Radix"
+    },
+    "root": {
+      "name": "Tarassaco officinale",
+      "desc": "Pianta erbacea perenne, di altezza compresa tra 3 e 9 cm. Presenta una grossa radice a fittone dalla quale si sviluppa, a livello del suolo, una rosetta basale di foglie munite di gambi corti e sotterranei.",
+      "images": [{
+        "path": "tarassaco.jpg",
+        "title": "Tarassaco officinale"
+      }]
+    }
+  }, {
+    "id": 4,
+    "slug": "bryopsida-iris",
+    "name": "Bryopsida Iris",
+    "geo": "(DMM): 45.485782, 9.188233",
+    "address": "Angolo via Borsieri / via Pepe",
+    "map": {
+      "x": 45.485782,
+      "y": 9.188233,
+      "icon": "leaf-green"
+    },
+    "desc": "All'angolo fra via Borsieri e via Pepe, nel parcheggio vive un particolare tipo di muschio, prospera se inzuppato di carburante, solo diesel e benzina non tollera bene i gas, è altamente infiammabile, quando prende fuoco riesce a risorgere dalle proprie ceneri.",
+    "img": {
+      "path": "bryopsida-iris.png",
+      "title": "Bryopsida Iris"
+    },
+    "root": {
+      "name": "Muschio",
+      "desc": "Pianta erbacea che si riproduce per spore, mancano di strutture vascolari completamente differenziate e lignificate. L'assorbimento e il trasporto dell'acqua e dei soluti avvengono soprattutto per capillarità e interessano tutta la superficie della pianta.",
+      "images": [{
+        "path": "muschio.jpg",
+        "title": "Muschio"
+      }]
+    }
+  }, {
+    "id": 5,
+    "slug": "hedera-helix-luminosa",
+    "name": "Hedera Helix Luminosa",
+    "geo": "(DMM): 41 24.2028, 2 10.4418",
+    "address": "Metropolitana Isola",
+    "map": {
+      "x": 45.4875398,
+      "y": 9.1910841,
+      "icon": "leaf-orange"
+    },
+    "desc": "Nelle profondità dei binari della metropolitana, linea 5 alla fermata Isola, si può trovare dell'edera avvinghiata alla terza rotaia dove scorre l'elettricità, si estende lungo il tunnel in entrambe le direzioni, non necessita di fotosintesi, vive bene al buio e si ricarica abusivamente alla corrente. ",
+    "img": {
+      "path": "hedera-helix-luminosa.png",
+      "title": "Hedera Helix Luminosa"
+    }
+  }, {
+    "id": 6,
+    "slug": "centocchio-natrium",
+    "name": "Centocchio Natrium",
+    "geo": "(DMM): 41 24.2028, 2 10.4418",
+    "address": "Viale Zara",
+    "map": {
+      "x": 45.490799,
+      "y": 9.191479,
+      "icon": "leaf-violet"
+    },
+    "desc": "Nei pressi di Acqua & Sapone di viale Zara si è sviluppata la mutazione di una Stellaria pallida, a seguito di un saccheggio, enormi quantità di detersivo si dispersero nell'ambiente, si è nutrita delle perdite di ammorbidente e candeggina provenienti dal magazzino, acquisendo il caratteristico odore pungente e la colorazione viola. ",
+    "img": {
+      "path": "centocchio-natrium.png",
+      "title": "Centocchio Natrium"
+    },
+    "root": {
+      "name": "Stellaria pallida",
+      "desc": "Pianta a ciclo biennale dal tipico fiore a stella, appartenenti alla famiglia delle Caryophyllaceae. Presenta fusti striscianti e con gemme poste a livello del terreno.",
+      "images": [{
+        "path": "stellaria.jpg",
+        "title": "Stellaria pallida"
+      }]
+    }
+  }, {
+    "id": 7,
+    "slug": "ettafolium-tramsense",
+    "name": "Ettafolium Tramsense",
+    "geo": "(DMM): 41 24.2028, 2 10.4418",
+    "address": "Piazzale Lagosta",
+    "map": {
+      "x": 45.489672,
+      "y": 9.190838,
+      "icon": "leaf-lime"
+    },
+    "desc": "Alla fermata del tram in piazzale Lagosta si trova una comune specie di ettafoglio, la mutazione e moltiplicazione delle foglie è la conseguenza del crescente inquinamento idrico della falda. Le persone cercano disperatamente trifogli, poiché si diceva portassero fortuna.",
+    "img": {
+      "path": "ettafolium-tramsense.png",
+      "title": "Ettafolium Tramsense"
+    },
+    "root": {
+      "name": "Trifoglio pratense",
+      "desc": "Pianta erbacea perenne, geograficamente diffusissima. Non sopporta i ristagni e la sua altezza arriva sino ai 30 cm. È un'ottima erba da foraggio e viene anche utilizzata nella rotazione dei terreni per l’arricchimento del suolo.",
+      "images": [{
+        "path": "trifoglio.jpg",
+        "title": "Trifoglio pratense"
+      }]
+    }
+  }]
+}

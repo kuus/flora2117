@@ -1,0 +1,22 @@
+/**
+ * Bootstrap custom $variables
+ * Override default values and then import them.
+ *
+ */
+$font-family-sans-serif: 'Source Sans Pro', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+$font-family-serif: 'Amiri', Georgia, "Times New Roman", Times, serif;
+
+$font-size-base: 1.1rem;
+$headings-font-family: $font-family-sans-serif;
+$font-family-base: $font-family-serif;
+$text-muted: #999;
+$grid-gutter-width-base: 45px;
+
+@import "../../../node_modules/bootstrap/scss/variables";
+
+/**
+ * App $variables (theme indipendent)
+ *
+ */
+
+// icomoon

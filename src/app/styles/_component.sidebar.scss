@@ -1,0 +1,45 @@
+.appSidebar {
+  display: flex;
+  bottom: auto;
+  width: 100%;
+  flex-direction: row;
+  justify-content: center;
+  background: rgba(255,255,255,.9);
+  text-transform: uppercase;
+  font-family: $headings-font-family;
+  white-space: nowrap;
+
+  @include media-breakpoint-up(lg) {
+    bottom: 0;
+    right: auto;
+    width: 150px;
+    flex-direction: column;
+    text-align: right;
+  }
+
+  .nav-link {
+    padding: $spacer ($spacer / 2);
+    font-size: $font-size-xs;
+
+    @include media-breakpoint-up(sm) {
+      padding: $spacer;
+      font-size: $font-size-sm;
+    }
+
+    @include media-breakpoint-up(lg) {
+      padding: $spacer * 1.5;
+      font-size: $font-size-h6;
+    }
+
+    &--home {
+      color: $text-muted;
+      text-transform: lowercase;
+    }
+
+    &.active {
+      opacity: .5;
+      cursor: default;
+      // font-weight: 800;
+    }
+  }
+}
